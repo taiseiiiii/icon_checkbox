@@ -1,6 +1,6 @@
 name: icon_checkbox
 description: Package to make easier the proccess of creating a icon check box.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/taiseiiiii/icon_checkbox
 
 environment:
