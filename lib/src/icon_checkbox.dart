@@ -13,7 +13,7 @@ class IconCheckbox extends StatefulWidget {
   final double? boxWidth;
 
   const IconCheckbox({
-    super.key, 
+    super.key,
     required this.checkedIcon,
     this.uncheckedIcon,
     required this.value,
@@ -24,9 +24,9 @@ class IconCheckbox extends StatefulWidget {
     this.iconSize,
     this.boxHeight,
     this.boxWidth,
-  }): assert(uncheckedIcon != null || boxdecoration != null,
-    'checkedIcon and boxdecoration cannot be both null');
-  
+  }) : assert(uncheckedIcon != null || boxdecoration != null,
+            'checkedIcon and boxdecoration cannot be both null');
+
   @override
   IconCheckboxState createState() => IconCheckboxState();
 }
@@ -56,18 +56,17 @@ class IconCheckboxState extends State<IconCheckbox> {
         widget.onChanged(_value);
       },
       child: Container(
-        height: widget.boxHeight,
-        width: widget.boxWidth,
-        decoration: widget.boxdecoration,
-        child: Opacity(
-          opacity: !_value && widget.uncheckedIcon == null ? 0 : 1,
-          child: Icon(
-            _value ? widget.checkedIcon : widget.uncheckedIcon,
-            color: _value ? widget.checkColor : widget.unCheckColor,
-            size: widget.iconSize,
-          ),
-        )
-      ),
+          height: widget.boxHeight,
+          width: widget.boxWidth,
+          decoration: widget.boxdecoration,
+          child: Opacity(
+            opacity: !_value && widget.uncheckedIcon == null ? 0 : 1,
+            child: Icon(
+              _value ? widget.checkedIcon : widget.uncheckedIcon,
+              color: _value ? widget.checkColor : widget.unCheckColor,
+              size: widget.iconSize,
+            ),
+          )),
     );
   }
 }

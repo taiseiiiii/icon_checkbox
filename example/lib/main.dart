@@ -48,57 +48,60 @@ class _MyHomePageState extends State<MyHomePage> {
               uncheckedIcon: Icons.lightbulb_outline_rounded,
               value: isChecked,
               onChanged: (value) {
-                  setState(() {
-                    isChecked = value;
-                  });
+                setState(() {
+                  isChecked = value;
+                });
               },
             ),
-            const SizedBox(height: 15,),
+            const SizedBox(
+              height: 15,
+            ),
             // change Icon color
             IconCheckbox(
-                checkedIcon: Icons.lightbulb_outline,
-                uncheckedIcon: Icons.lightbulb_outline_rounded,
-                checkColor: const Color(0xFFFCD900),
-                unCheckColor: Colors.black,
-                value: false,
-                onChanged: (value) {
-              },
+              checkedIcon: Icons.lightbulb_outline,
+              uncheckedIcon: Icons.lightbulb_outline_rounded,
+              checkColor: const Color(0xFFFCD900),
+              unCheckColor: Colors.black,
+              value: false,
+              onChanged: (value) {},
             ),
-            const SizedBox(height: 15,),
+            const SizedBox(
+              height: 15,
+            ),
             // change Icon size
             IconCheckbox(
-                checkedIcon: Icons.lightbulb_outline,
-                uncheckedIcon: Icons.lightbulb_outline_rounded,
-                iconSize: 40,
-                value: false,
-                onChanged: (value) {
-              },
+              checkedIcon: Icons.lightbulb_outline,
+              uncheckedIcon: Icons.lightbulb_outline_rounded,
+              iconSize: 40,
+              value: false,
+              onChanged: (value) {},
             ),
-            const SizedBox(height: 15,),
+            const SizedBox(
+              height: 15,
+            ),
             // change Checkbox frame
             IconCheckbox(
-                checkedIcon: Icons.lightbulb_outline,
-                uncheckedIcon: Icons.lightbulb_outline_rounded,
-                value: false,
-                boxdecoration: BoxDecoration(
-                  border: Border.all(color: Colors.blue),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                onChanged: (value) {
-              },
+              checkedIcon: Icons.lightbulb_outline,
+              uncheckedIcon: Icons.lightbulb_outline_rounded,
+              value: false,
+              boxdecoration: BoxDecoration(
+                border: Border.all(color: Colors.blue),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              onChanged: (value) {},
             ),
-            const SizedBox(height: 15,),
+            const SizedBox(
+              height: 15,
+            ),
             // Check box with icon appearing when tapped
             IconCheckbox(
-                checkedIcon: Icons.lightbulb_outline,
-                value: false,
-                checkColor: Colors.white,
-                boxdecoration: BoxDecoration(
+              checkedIcon: Icons.lightbulb_outline,
+              value: false,
+              checkColor: Colors.white,
+              boxdecoration: BoxDecoration(
                   border: Border.all(color: const Color(0xFFBFBFBF)),
-                  color: const Color(0xFFBFBFBF)
-                ),
-                onChanged: (value) {
-              },
+                  color: const Color(0xFFBFBFBF)),
+              onChanged: (value) {},
               boxHeight: 50,
               boxWidth: 50,
               iconSize: 40,
